@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiplication Table Generator</title>
+    <link rel="stylesheet" href="assignment1.css">
+</head>
+
+<body>
+    
+
+    <header>
+        <h1>Multiplication Table Generator</h1>
+        <p>Click anywhere on the page to generate a multiplication table</p>
+    </header>
+
+    <section class="card">
+        <div class="controls">
+            <label for="rows">Rows</label>
+            <input type="number" id="rows" value="10" min="1" max="20">
+
+            <label for="cols">Columns</label>
+            <input type="number" id="cols" value="10" min="1" max="20">
+        </div>
+    </section>
+
+    <section id="tableContainer"></section>
+
+    <footer></footer>
+
+    <!-- JavaScript loaded at the end of the body -->
+    <script src="assignment1.js"></script>
+</body>
+</html>

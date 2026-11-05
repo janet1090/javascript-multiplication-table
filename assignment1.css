@@ -1,0 +1,112 @@
+
+
+:root {
+    --primary: #1e40af;
+    --primary-light: #60a5fa;
+    --accent: #22d3ee;
+    --dark: #0f172a;
+    --muted: #64748b;
+    --background: #f1f5f9;
+    --card: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+    color: var(--dark);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+header p {
+    color: var(--muted);
+}
+
+header::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 25px auto 0;
+    background-image: url("https://images.unsplash.com/photo-1509223197845-458d87318791?auto=format&fit=crop&w=400&q=60");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 14px 22px;
+    padding: 22px 32px;
+    background-color: var(--card);
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    width: 90px;
+    padding: 7px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+}
+
+#tableContainer {
+    margin-top: 45px;
+    overflow-x: auto;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    background-color: var(--card);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+td {
+    padding: 16px 20px;
+    border: 1px solid #e5e7eb;
+    text-align: center;
+    font-weight: 500;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+td:hover {
+    background-color: var(--primary-light);
+    color: #ffffff;
+    transform: scale(1.08);
+}
+
+footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 0.9em;
+    color: var(--muted);
+}
+
+footer::before {
+    content: "© 2026 Janet Adewusi • COMP125 • Centennial College";
+}
